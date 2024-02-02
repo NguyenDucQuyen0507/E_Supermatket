@@ -1,0 +1,187 @@
+.thumbnail-discount:hover {
+  cursor: pointer;
+}
+.thumbnail-discount img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.thumbnail-discount::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 52, 52, 0.5);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.thumbnail-discount:hover:before {
+  opacity: 1;
+}
+.thumbnail-discount:hover .thumbnail-overplay {
+  opacity: 1;
+}
+.thumbnail-overplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #fff;
+  transition: all 0.2s linear;
+}
+.thumbnail-overplay:hover {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.discount-products {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}
+.discount-products_shop {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  padding: 7px;
+}
+.discount-products_check {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  padding: 4px;
+  font-size: 13px;
+}
+.hr-or {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
+  background: white;
+}
+.ant-form-item-required::before {
+  display: none !important;
+}
+
+.logout-block {
+  position: relative;
+}
+.logout-none {
+  position: absolute;
+  display: none;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+.logout-none::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0%;
+  width: 160px;
+  height: 10px;
+  background-color: transparent;
+}
+.logout-list {
+  background-color: #fff;
+  z-index: 100;
+  border: 1px solid gray;
+  color: #008848;
+  margin-top: 10px;
+}
+.logout-list li {
+  padding: 10px 0px 10px 10px;
+}
+.logout-block:hover .logout-none {
+  display: block;
+}
+.animation_loading {
+  animation: animation 1s linear infinite;
+}
+@keyframes animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* quay biểu tượng icons */
+.routed__icons {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease;
+}
+.routed__icons--back {
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease;
+}
+.box__shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rotating-icon {
+  animation: rotate 10s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.show__menu {
+  position: relative;
+  animation: showMenu 0.3s linear forwards;
+}
+.show__close {
+  animation: showMenu__close 0.3s linear forwards;
+}
+@keyframes showMenu {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(35px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(60px);
+    opacity: 1;
+  }
+}
+@keyframes showMenu__close {
+  0% {
+    transform: translateX(60px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(35px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+}
