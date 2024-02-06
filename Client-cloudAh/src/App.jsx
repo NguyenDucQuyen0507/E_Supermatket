@@ -18,7 +18,7 @@ import HistoryProduct from "./components/Home/History/HistoryProduct";
 import HistoryProductDetails from "./components/Home/History/HistoryProductDetails";
 import UserInformation from "./components/Account/UserInformation";
 import SearchProducts from "./components/Home/Shop/SearchProducts/SearchProducts";
-import Messeger from "./components/Home/Messeger/index";
+// import Messeger from "./components/Home/Messeger/index";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { axiosClient } from "./Libraries/axiosClient";
@@ -79,7 +79,6 @@ function App() {
               </Routes>
             </section>
             <footer>
-              <Messeger />
               <Footer />
             </footer>
           </BrowserRouter>

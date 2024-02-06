@@ -32,7 +32,6 @@ function Search() {
     setResult([]);
     //
   };
-
   return (
     <div className="ml-20 search-content ">
       <Input.Search
